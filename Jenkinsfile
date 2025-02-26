@@ -56,10 +56,7 @@ pipeline {
         stage("SonarQube: Code Quality Gates") {
             steps {
                 script {
-                    timeout(time: 5, unit: 'MINUTES') {
-                        waitForQualityGate()
-                    }
-                    sonarqube_code_quality()
+                   sonarqube_code_quality()
                 }
             }
         }
