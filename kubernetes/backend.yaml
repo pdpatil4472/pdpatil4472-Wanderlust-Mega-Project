@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: mail2prashant/wanderlust-backend-beta:v6
+          image: mail2prashant/wanderlust-backend-beta:v1.3
           ports:
             - containerPort: 8080
 ---
